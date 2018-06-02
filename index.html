@@ -1,29 +1,37 @@
 <html>
     <head>
-      
-        <meta charset="utf-8">  
-                <link type="text/css" rel = "stylesheet" href="materialize/css/materialize.min.css">
-                
-               
+      <title> Educacion Vial </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
     </head>
     <body >
-            <script type="text/javascript" src="materialize/js/materialize.min.js" ></script>
-            <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-            <script >
-            $(document).ready(function() {
-                 $('select').material_select();
-                });
-     
-            </script>
-            <div class="input-field col s12">
-                    <select>
-                      <option value="" disabled selected>Choose your option</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                    </select>
-                    
-                  </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Educacion vial</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Inicio</a></li>
+                <li><a href="#">info</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Empresa <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Mision</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Valores</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Estadisticas</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="escuela.html"><span class="glyphicon glyphicon-user"></span> Registrar Escuela</a></li>
+                <li><a href="participante.php"><span class="glyphicon glyphicon-log-in"></span> Registrar Alumno</a></li>
+              </ul>
+            </div>
+          </nav>
+          
     </body>
     <footer>
 
