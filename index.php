@@ -15,9 +15,9 @@
 
         <ul class="uk-navbar-nav">
             <li class="uk-active"><a href="#"> Educacion Vial</a></li>
-            <li class="uk-active"><a href="#"> Inicio</a></li>
+            <li class="uk-active"><a href="index.php"><span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span> Inicio</a></li>
             <li class="uk-active"> 
-                <a href="#"> Nosotros </a>
+                <a href="#"><span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span> Nosotros </a>
                 <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                         <li class="uk-active"><a href="#"> Mision </a></li>
@@ -26,8 +26,8 @@
                     </ul>
                 </div>
             </li>
-            <li class="uk-active"><a href="estadisticas.php" uk-toggle> Estadisticas </a></li>
-            <li class="uk-active"><a href="#"> Info </a></li>
+            <li class="uk-active"><a href="estadisticas.php" uk-toggle><span class="uk-icon uk-margin-small-right" uk-icon="icon: world"></span> Estadisticas </a></li>
+            <li class="uk-active"><a href="#"><span class="uk-icon uk-margin-small-right" uk-icon="icon: info"></span> Info </a></li>
         </ul>
 
     </div>
@@ -39,30 +39,36 @@
         </ul>
     </div>
   </nav>
+    <div class="uk-text-primary">
+        <h1 class="h1">Educacion vial <img class="img" data-src="resources/stop.png" uk-img="target: .my-class"></h1>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+    </div>
+
     <div class="slider">
         <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: scale; ratio: 8:3; autoplay: true">
 
-        <ul class="uk-slideshow-items">
-        <li>
-            <img src="resources/rep.png" alt="" uk-cover>
-        </li>
-        <li>
-            <img src="https://i.ytimg.com/vi/kxfeTcty3Do/maxresdefault.jpg" alt="" uk-cover>
-        </li>
-        <li>
-            <img src="resources/treyarch.jpg" alt="" uk-cover>
-        </li>
-        </ul>
+            <ul class="uk-slideshow-items">
+            <li>
+                <img src="resources/rep.png" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="https://i.ytimg.com/vi/kxfeTcty3Do/maxresdefault.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="resources/treyarch.jpg" alt="" uk-cover>
+            </li>
+            </ul>
 
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        </div>
     </div>
-    </div>
-    
 
     <div id="modal1" uk-modal>
         <div class="uk-modal-dialog">
-            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <button class="uk-modal-close-outside" type="button" uk-close></button>
             <div class="uk-modal-header">
                 <h2 class="uk-modal-title">Formulario de datos escolares</h2>
             </div>
@@ -117,9 +123,9 @@
 
     <div id="modal2" uk-modal>
         <div class="uk-modal-dialog">
-            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <button class="uk-modal-close-outside" type="button" uk-close></button>
             <div class="uk-modal-header">
-                <h2 class="uk-modal-title">Modal Title</h2>
+                <h2 class="uk-modal-title">Formulario de datos del participante</h2>
             </div>
             <div class="uk-modal-body">
             <form method="post" class="uk-form-horizontal uk-margin-large" action="datos_participante.php">
@@ -213,8 +219,8 @@
 
 </body>
 <footer id="footer">
-    <a href="" class="uk-icon-button uk-margin-right" uk-icon="twitter"></a>
-    <a href="" class="uk-icon-button  uk-margin-right" uk-icon="facebook"></a>
-    <a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+    <a href="https://twitter.com" class="uk-icon-button uk-margin-right" uk-icon="twitter"></a>
+    <a href="https://faceboock.com" class="uk-icon-button  uk-margin-right" uk-icon="facebook"></a>
+    <a href="https://youtube.com" class="uk-icon-button" uk-icon="youtube"></a>
 </footer>
 </html>
