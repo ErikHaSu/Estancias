@@ -25,44 +25,25 @@
 
     </div>
     <div class="uk-navbar-right">
-
         <ul class="uk-navbar-nav">
-          <li class="uk-active"><a href="#modal1" uk-toggle><span class="uk-icon-button uk-margin-small-right" uk-icon="pencil"></span>Registrar escuela</a></li>
-          <li class="uk-active"><a href="#modal2" uk-toggle><span class="uk-icon-button uk-margin-small-right" uk-icon="user"></span>Registrar participante</a></li>
+        <li class="uk-active"><a href="index.php" uk-toggle><span class="uk-icon-button uk-margin-small-right" uk-icon="reply"></span>Regresar</a></li>
         </ul>
     </div>
   </nav>
-
-    <div class="uk-text-primary">
-        <h1 class="h1">Educación vial <img class="img" data-src="resources/stop.png" uk-img="target: .my-class"></h1>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        
-    </div>
-
-    <div class="slider">
-        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: scale; ratio: 8:3; autoplay: true">
-
-            <ul class="uk-slideshow-items">
-            <li>
-                <img class="a" src="resources/mov.jpg" alt="" uk-cover>
-            </li>
-            <li>
-                <img class="a" src="resources/semaforo.jpg" alt="" uk-cover>
-            </li>
-            <li>
-                <img class="a" src="resources/Vialidad.png" alt="" uk-cover>
-            </li>
-            <li>
-                <img class="a" src="resources/señales.jpg" alt="" uk-cover>
-            </li>
-            </ul>
-
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    <div class="reg">
+        <div class="uk-inline">
+            <img src="https://wallpapersite.com/images/pages/pic_w/6362.jpg"  alt="">
+            <div class="uk-overlay-primary uk-position-cover"></div>
+            <div class="uk-overlay uk-position-center uk-light">
+            <a href="#modal1" uk-toggle><span class="uk-icon uk-margin-small-right" uk-icon="icon: pencil"></span> Registro de escuela </a>
+            <br>
+            <br>
+            <br>
+            <a href="#modal2" uk-toggle><span class="uk-icon uk-margin-small-right" uk-icon="icon: user"></span> Registro del participante </a>
+            </div>
         </div>
     </div>
-    
+
     <div id="modal1" uk-modal>
         <div class="uk-modal-dialog">
             <button class="uk-modal-close-outside" type="button" uk-close></button>
@@ -114,7 +95,7 @@
                 <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
                 <button class="uk-button uk-button-primary" type="submit" value="Submit" >Guardar</button>
             </div>
-          </form>
+        </form>
         </div>
     </div>
 

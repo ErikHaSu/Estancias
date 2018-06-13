@@ -10,11 +10,11 @@
               <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.5/js/uikit-icons.min.js"></script>
         </head>
 <body>
-<nav class="uk-navbar-container" uk-navbar>
+<nav class="uk-navbar-container" id="nav" uk-navbar>
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#"> Educacion Vial</a></li>
+            <li class="uk-active"><a href="#"> Educación Vial</a></li>
     </div>
     <div class="uk-navbar-right">
 
@@ -48,4 +48,9 @@
                 ?>
             </div>
     </body>
+    <footer id="footer">
+    <a href="https://twitter.com" class="uk-icon-button uk-margin-right" uk-icon="twitter"></a>
+    <a href="https://facebook.com" class="uk-icon-button  uk-margin-right" uk-icon="facebook"></a>
+    <a href="https://youtube.com" class="uk-icon-button" uk-icon="youtube"></a>
+    </footer>
 </html>
