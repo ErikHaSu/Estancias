@@ -27,7 +27,7 @@
     <div class="uk-navbar-right">
 
         <ul class="uk-navbar-nav">
-          <li class="uk-active"><a href="registros.php" uk-toggle><span class="uk-icon-button uk-margin-small-right" uk-icon="pencil"></span>Registrar escuela</a></li>
+          <li class="uk-active"><a href="registros.php" uk-toggle><span class="uk-icon-button uk-margin-small-right" uk-icon="pencil"></span>Registrase</a></li>
         </ul>
     </div>
   </nav>

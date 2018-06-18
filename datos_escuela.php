@@ -14,7 +14,7 @@
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#"> Educación Vial</a></li>
+            <li class="uk-active"><a href="index.php"> Educación Vial</a></li>
     </div>
     <div class="uk-navbar-right">
 
