@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
-        <head>
-              <meta charset="utf-8">
-              <!-- UIkit CSS -->
-              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.5/css/uikit.min.css" />
-              <link rel="stylesheet" href="css/style.css">
-              <!-- UIkit JS -->
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.5/js/uikit.min.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.5/js/uikit-icons.min.js"></script>
-        </head>
+    <head>
+            <meta charset="utf-8">
+            <!-- UIkit CSS -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.5/css/uikit.min.css" />
+            <link rel="stylesheet" href="css/style.css">
+            <!-- UIkit JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.5/js/uikit.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.5/js/uikit-icons.min.js"></script>
+    </head>
 <body>
   <nav class="uk-navbar-container" id="nav" uk-navbar>
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
             <li class="uk-active"><a href="#"> Educación Vial</a></li>
-            <li class="uk-active"><a href="index.php"><span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span> Inicio</a></li>
+            <li class="uk-active"><a href="index.html"><span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span> Inicio</a></li>
             <li class="uk-active"> 
                 <a href="#"><span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span> Nosotros </a>
             </li>
-            <li class="uk-active"><a href="estadisticas.php" uk-toggle><span class="uk-icon uk-margin-small-right" uk-icon="icon: world"></span> Estadisticas </a></li>
+            <li class="uk-active"><a href="graficas/index.html" uk-toggle><span class="uk-icon uk-margin-small-right" uk-icon="icon: world"></span> Estadisticas </a></li>
             <li class="uk-active"><a href="#"><span class="uk-icon uk-margin-small-right" uk-icon="icon: info"></span> Info </a></li>
         </ul>
 
     </div>
     <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
-        <li class="uk-active"><a href="index.php" uk-toggle><span class="uk-icon-button uk-margin-small-right" uk-icon="reply"></span>Regresar</a></li>
+        <li class="uk-active"><a href="index.html" uk-toggle><span class="uk-icon-button uk-margin-small-right" uk-icon="reply"></span>Regresar</a></li>
         </ul>
     </div>
   </nav>
@@ -142,14 +142,23 @@
                                         </div>
                                     </div>
                                 </div>       
-                                
+                            
                                 <div class="uk-margin">
                                     <label class="uk-form-label" for="edad">Edad</label>
                                     <div class="uk-form-controls">
                                         <div class="uk-margin">
                                             <div class="uk-inline">
-                                                <span class="uk-form-icon" uk-icon="icon: pencil"></span>
-                                                <input type="text" class="uk-input uk-form-width-large" id="edad" placeholder="Edad.." name="edad">
+                                                <span class="uk-form-icon"></span>
+                                                <div class="uk-margin">
+                                                        <select class="uk-select" id="edad"  name="edad">
+                                                            <option value ="7"> 7 </option>
+                                                            <option value ="8"> 8 </option>
+                                                            <option value ="9"> 9 </option>
+                                                            <option value ="10"> 10 </option>
+                                                            <option value ="11"> 11 </option>
+                                                            <option value ="12"> 12 </option>
+                                                        </select>
+                                                    </div>
                                             </div>
                                         </div>
                                     </div>
@@ -170,18 +179,16 @@
                                         <div class="uk-form-controls">
                                             <select class="uk-select" name="escuela" id="sexo">
                                             <?php 
-                                                    include("conexion.php");
-                                                    $conexion=mysqli_connect($host,$user,$pw,$bd) or
-                                                    die("Problemas con la conexión");
-
-                                                    $registros=mysqli_query($conexion,"select id_escuela, nombre
-                                                    from escuela") or
-                                                        die("Problemas en el select:".mysqli_error($conexion));
+                                                    include("graficas/pconexionp/abrir_conexion.php");
+                                                    $registros=mysqli_query($link,"select id_escuela, nombre
+                                                    from escuelas") or
+                                                        die("Problemas en el select:".mysqli_error($link));
 
                                                         while ($reg=mysqli_fetch_array($registros))
                                                         {
                                                         echo "<option value='".$reg['nombre']."'>".$reg['nombre']."</option>";
                                                         }
+                                                        include("graficas/pconexionp/cerrar_conexion.php");
                                                 ?>
                                             </select>
                                         </div>

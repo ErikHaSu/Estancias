@@ -24,24 +24,21 @@
     </div>
   </nav>
     <?php
-    include("conexion.php");
+    include("graficas/pconexionp/abrir_conexion.php");
 
     if (isset($_REQUEST['nombre']) && !empty($_REQUEST['nombre']) &&
         isset($_REQUEST['clave']) && !empty($_REQUEST['clave']) &&
         isset($_REQUEST['localidad']) && !empty($_REQUEST['localidad']))
         {
-            $conexion=mysqli_connect($host,$user,$pw,$bd) or
-                die("Problemas con la conexión");
-
-        mysqli_query($conexion, "INSERT INTO escuela(nombre,clave,localidad)
+        mysqli_query($link, "INSERT INTO escuelas(nombre,clave,localidad)
         VALUES('$_REQUEST[nombre]','$_REQUEST[clave]','$_REQUEST[localidad]')")  or
-            die("<h1>Problemas en el select:</h1>".mysqli_error($conexion));
+            die("<h1>Problemas en el select:</h1>".mysqli_error($link));
         
         echo " <h1> Datos insertados corretamete  </h1>";
         }else{
             echo "<h1> problema al insertar datos </h1>";
         }
-
+        include("graficas/pconexionp/cerrar_conexion.php");
     ?>
 </body>
 <footer id="footer">
